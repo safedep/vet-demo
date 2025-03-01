@@ -1,13 +1,13 @@
 {
-    "title": "Ubuntu Custom Content",
-    "description": "Write custom markdown for all phases",
+    "title": "SafeDep vet demo 🚀",
+    "description": "Secure Your Open Source, One Scan at a Time! 🔒✨",
     "details": {
       "intro": {
         "text": "intro.md"
       },
       "steps": [
         {
-          "title": "Let's update our package manager repository",
+          "title": "Let's install vet and scan your repositries!",
           "text": "step1.md"
         }
       ],
