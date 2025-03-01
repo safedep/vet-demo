@@ -3,6 +3,7 @@
     "description": "Secure Your Open Source, One Scan at a Time! 🔒✨",
     "details": {
       "intro": {
+        "background": "background.sh",
         "foreground": "foreground.sh",
         "text": "intro.md"
       },
