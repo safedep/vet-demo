@@ -6,14 +6,6 @@
 
 **Vet** is a lightweight, policy-driven tool that quickly scans your open source projects for vulnerabilities, licensing issues, and other security risks. This guide will show you how to install and run Vet on Ubuntu in a few simple steps, so you can start protecting your code right away!
 
-
-```bash
-cd /tmp/
-wget https://github.com/safedep/vet/releases/download/v1.9.4/vet_Linux_x86_64.tar.gz
-tar -xvzf vet_Linux_x86_64.tar.gz
-mv vet /usr/local/bin/
-```{{exec}}
-
 ## Verify the installation
 
 ```bash
