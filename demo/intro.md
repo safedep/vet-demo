@@ -12,4 +12,25 @@ cd /tmp/
 wget https://github.com/safedep/vet/releases/download/v1.9.4/vet_Linux_x86_64.tar.gz
 tar -xvzf vet_Linux_x86_64.tar.gz
 mv vet /usr/local/bin/
-```
+```{{exec}}
+
+## Verify the installation
+
+```bash
+vet version
+```{{exec}}
+
+## 🎯 Basic Usage
+
+* Lets clone a sample repository to perform our vet scanning
+
+```bash
+git clone https://github.com/safedep/demo-client-python demo-app
+cd ./demo-app
+```{{exec}}
+
+* Now, let's scan it
+
+```bash
+vet scan
+```{{exec}}
