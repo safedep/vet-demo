@@ -2,25 +2,21 @@
 
 * Run a scan using `vet`
 
-```bash
-vet scan
-```{{exec}}
+`vet scan`{{exec}}
+
+* Automatically resolve transitive dependencies
+
+`vet scan --transitive`{{exec}}
 
 * You can also scan a specific file
 
-```bash
-vet scan -M requirements.txt
-```{{exec}}
+`vet scan -M requirements.txt`{{exec}}
 
 * You can also scan a directory letting `vet` auto-detect the files to scan
 
-```bash
-vet scan -D ./src
-```{{exec}}
+`vet scan -D ./src`{{exec}}
 
 * You can also scan a GitHub repository
 
-```bash
-vet scan --github https://github.com/safedep/demo-client-python
-```{{exec}}
+`vet scan --github https://github.com/safedep/demo-client-python`{{exec}}
 
