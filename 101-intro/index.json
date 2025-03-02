@@ -9,12 +9,28 @@
       },
       "steps": [
         {
+          "title": "Setup the environment",
+          "text": "step0-setup.md"
+        },
+        {
           "title": "Let's start scanning!",
           "text": "step1-scan.md"
         },
         {
           "title": "Query data using CEL filters!",
           "text": "step2-query.md"
+        },
+        {
+          "title": "Generate a report",
+          "text": "step3-report.md"
+        },
+        {
+          "title": "Code Scanning with vet",
+          "text": "step4-code-scanning.md"
+        },
+        {
+          "title": "Malicious Package Scanning",
+          "text": "step5-malicious-package-scanning.md"
         }
       ],
       "finish": {
