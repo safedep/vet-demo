@@ -22,6 +22,6 @@
 
 * Query for packages by GitHub stars
 
-`vet query --from /tmp/vet-json --filter 'projects.exists(p, (p.type == "GITHUB") && (p.stars < 10))'`{{exec}}
+`vet query --from /tmp/vet-json --filter 'projects.exists(p, (p.type == "GITHUB") && (p.stars < 300))'`{{exec}}
 
 

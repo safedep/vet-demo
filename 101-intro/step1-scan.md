@@ -2,7 +2,7 @@
 
 * Run a scan using `vet`
 
-`vet scan`{{exec}}
+`vet scan`{{exec}}
 
 * Automatically resolve transitive dependencies
 
@@ -14,7 +14,7 @@
 
 * You can also scan a directory letting `vet` auto-detect the files to scan
 
-`vet scan -D ./src`{{exec}}
+`vet scan -D .`{{exec}}
 
 * You can also scan a GitHub repository
 

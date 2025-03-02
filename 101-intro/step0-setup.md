@@ -1,6 +1,6 @@
 ## ✅ Verify the installation
 
-`vet version`{{exec}}
+`vet version`{{exec}}
 
 ## 🎯 Setup the environment
 

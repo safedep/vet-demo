@@ -5,7 +5,7 @@
 
 * Register for a free SafeDep account and get your API key
 
-`vet cloud quickstart`{{exec}}
+`vet cloud quickstart`{{copy}}
 
 - Follow the instructions to create a new account
 - Obtain your API key
