@@ -1,5 +1,5 @@
 {
-    "title": "SafeDep vet demo 🚀",
+    "title": "SafeDep vet Hands-on Guide 🚀",
     "description": "Secure Your Open Source, One Scan at a Time! 🔒✨",
     "details": {
       "intro": {
@@ -9,8 +9,12 @@
       },
       "steps": [
         {
-          "title": "Let's install vet and scan your repositries!",
-          "text": "step1.md"
+          "title": "Let's start scanning!",
+          "text": "step1-scan.md"
+        },
+        {
+          "title": "Query data using CEL filters!",
+          "text": "step2-query.md"
         }
       ],
       "finish": {
