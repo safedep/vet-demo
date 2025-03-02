@@ -23,7 +23,7 @@
 
 * Scan a single package by its package URL
 
-`vet inspect malware --purl pkg:/npm/postcss-optimizer@3.2.7`{{exec}}
+`vet inspect malware --purl pkg:/npm/chrome-api-utils@1.1.0`{{exec}}
 
 * Enable malicious package scanning for `vet` scan
 
