@@ -5,9 +5,13 @@ This integration allows you to setup a security guardrail for your GitHub reposi
 
 ### Clone sample repository
 
-* Start by authenticating with your GitHub account
+* Start by authenticating with your GitHub account or use a GitHub token (see next step)
 
 `gh auth login`{{exec}}
+
+* Alternatively, set `GITHUB_TOKEN` environment variable
+
+`export GITHUB_TOKEN=<your-github-token>`{{exec}}
 
 * Execute the following command to clone the repository where you want to integrate `vet`
 
