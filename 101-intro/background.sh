@@ -11,6 +11,14 @@ tar -xvzf vet_Linux_x86_64.tar.gz
 chmod +x vet
 
 mv vet /usr/bin/
-chown root:root /usr/bin/vet
 
-ln -sf /usr/bin/vet /usr/local/bin/vet
+# Install latest version of gh cli
+LATEST_GHCLI_VERSION=$(curl -s https://api.github.com/repos/cli/cli/releases/latest | grep '"tag_name":' | sed -E 's/.*"([^"]+)".*/\1/')
+LATEST_GHCLI_VERSION_NUMBER=$(echo $LATEST_GHCLI_VERSION | sed -E 's/v//')
+
+wget "https://github.com/cli/cli/releases/download/${LATEST_GHCLI_VERSION}/gh_${LATEST_GHCLI_VERSION_NUMBER}_linux_amd64.tar.gz"
+
+tar -xvzf gh_${LATEST_GHCLI_VERSION_NUMBER}_linux_amd64.tar.gz
+chmod +x gh_${LATEST_GHCLI_VERSION_NUMBER}_linux_amd64/bin/gh
+
+mv gh_${LATEST_GHCLI_VERSION_NUMBER}_linux_amd64/bin/gh /usr/bin/

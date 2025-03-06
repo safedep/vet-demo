@@ -31,6 +31,10 @@
         {
           "title": "Malicious Package Scanning",
           "text": "step5-malicious-package-scanning.md"
+        },
+        {
+          "title": "Integrate vet with GitHub Actions",
+          "text": "step6-github-actions.md"
         }
       ],
       "finish": {
