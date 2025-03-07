@@ -3,6 +3,20 @@
 `vet` has first class support for integration with GitHub Actions using [vet-action](https://github.com/safedep/vet-action).
 This integration allows you to setup a security guardrail for your GitHub repositories by enforcing policies on the open source components used.
 
+### Setup Environment
+
+* Crate a new workspace and switch to it
+
+`mkdir -p ~/workspace && cd ~/workspace`{{exec}}
+
+* Configure git
+
+> ℹ️ Customize the following commands with your own information
+
+`git config --global user.name "John Doe"`{{exec}}
+
+`git config --global user.email "john.doe@example.com"`{{exec}}
+
 ### Clone sample repository
 
 * Start by authenticating with your GitHub account or use a GitHub token (see next step)
@@ -44,6 +58,8 @@ This integration allows you to setup a security guardrail for your GitHub reposi
 
 * Commit and push the changes
 
+`gh repo set-default safedep/demo-client-python`{{exec}}
+
 `git add .github/workflows/vet-ci.yml .github/vet/policy.yml`{{exec}}
 
 `git commit -m "Add vet-action to the repository"`{{exec}}
@@ -54,9 +70,23 @@ This integration allows you to setup a security guardrail for your GitHub reposi
 
 `gh pr create --base main --head ci/integrate-vet --title "Integrate vet with GitHub Actions" --body "This PR integrates vet with GitHub Actions"`{{exec}}
 
+### Add a new dependency
 
+* Add a new dependency to the repository
 
+`echo "requests==2.28.1" >> requirements.txt`{{exec}}
 
+* Commit and push the changes
 
+`git add requirements.txt`{{exec}}
 
+`git commit -m "Add new dependency to the repository"`{{exec}}
+
+`git push origin ci/integrate-vet`{{exec}}
+
+### View the results
+
+* Navigate to the pull request and view the results
+
+`gh pr view --web`{{exec}}
 
